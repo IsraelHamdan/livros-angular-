@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Editora } from '../editora';
-import { Livro } from '../livro';
-import { ControleEditoraService } from '../controle-editora.service';
-import { ControleLivrosService } from '../controle-livros.service';
+import { Editora } from 'src/app/editora';
+import { Livro } from 'src/app/livro';
+import { ControleEditoraService } from 'src/app/controle-editora.service';
+import { ControleLivrosService } from 'src/app/controle-livros.service';
 
 @Component({
   selector: 'app-livro-lista',
@@ -18,7 +18,7 @@ export class LivroListaComponent implements OnInit {
     private servLivros: ControleLivrosService
   ) {}
 
-  exlcuir = (codigo: number): void => {
+  excluir = (codigo: number): void => {
     this.excluirLivro(codigo);
   };
 
