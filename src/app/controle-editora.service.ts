@@ -5,13 +5,24 @@ import { Editora } from './editora';
   providedIn: 'root',
 })
 export class ControleEditoraService {
-  editoras: Array<Editora>;
+  private editoras: Array<Editora> = [];
 
   constructor() {
     this.editoras = [
-      new Editora(1, 'Alta Books'),
-      new Editora(2, 'Person'),
-      new Editora(3, 'Casa do Código'),
+      { codEditora: 1, nome: 'Alta Books' },
+      { codEditora: 2, nome: 'Pearson' },
+      { codEditora: 3, nome: 'Pearson' },
     ];
+  }
+
+  getEditoras(): Array<Editora> {
+    return this.editoras;
+  }
+
+  getNomeEditoras(codEditora: number): string | undefined {
+    const findedEditor = this.editoras.find(
+      (editora) => editora.codEditora === codEditora
+    );
+    return findedEditor ? findedEditor.nome : undefined;
   }
 }
