@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { LivroListaModule } from './components/livro-lista/livro-lista.module';
 import { ControleEditoraService } from './controle-editora.service';
 import { ControleLivrosService } from './controle-livros.service';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { LivroDadosModule } from './components/livro-dados/livro-dados.module';
 

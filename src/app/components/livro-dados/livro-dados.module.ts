@@ -10,4 +10,3 @@ import { BrowserModule } from '@angular/platform-browser';
 })
 export class LivroDadosModule {}
 
-// Airam, funcionou, oq é o BrowserModule?

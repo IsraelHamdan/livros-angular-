@@ -34,10 +34,10 @@ export class LivroDadosComponent implements OnInit {
     );
   }
 
-  incluir() {
+  incluir = () => {
     this.livro.autores = this.autoresForm.split('\n');
     this.servLivros.incluir(this.livro).subscribe(() => {
       this.router.navigateByUrl('/lista');
     });
-  }
+  };
 }
