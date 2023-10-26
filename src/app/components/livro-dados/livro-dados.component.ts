@@ -28,12 +28,16 @@ export class LivroDadosComponent implements OnInit {
 
   ngOnInit(): void {
     this.editoras = this.servEditora.getEditoras();
+    console.log(
+      '🚀 ~ file: livro-dados.component.ts:32 ~ LivroDadosComponent ~ ngOnInit ~  this.editoras :',
+      this.editoras
+    );
   }
 
-  incluir = () => {
+  incluir() {
     this.livro.autores = this.autoresForm.split('\n');
     this.servLivros.incluir(this.livro).subscribe(() => {
       this.router.navigateByUrl('/lista');
     });
-  };
+  }
 }
