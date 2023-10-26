@@ -1,1 +1,22 @@
-<p>livro-dados works!</p>
+<main>
+  <form (ngSubmit)="incluir()" ngNativeValidate>
+    <div class="mb-3 form-group">
+      <label class="form-label">Titulo</label>
+      <input type="text" class="form-control" [(ngModel)]="livro.titulo" name="titulo" required id="titulo">
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label"></label>
+      <textarea class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label"></label>
+      <select class="form-select">
+        <option></option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-label"></label>
+      <input type="text" class="form-control">
+    </div>
+  </form>
+</main>

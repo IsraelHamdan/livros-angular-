@@ -1,24 +1,28 @@
-<main class="container">
+<main class="container-xxl">
   <h2 class="h2">Tabela de livros</h2>
-  <table class="table table-borded">
-    <tr>
-      <th>Titulo</th>
-      <th>Resumo</th>
-      <th>Autores</th>
-      <th>Autores</th>
-    </tr>
-    <tbody>
-      <tr *ngFor="let livro of livros">
-        <td>{{livro.codigo}}</td>
-        <td>{{livro.titulo}}</td>
-        <td>{{obterNome(livro.codEditora)}}</td>
-        <td>
-          <ul>
-            <li *ngFor="let autor of livro.autores">
-              {{autor}}
-            </li>
-          </ul>
-        </td>
+  <table class="table table-borded mt-3">
+    <thead>
+      <tr>
+        <th scope="row" class="th">Titulo</th>
+        <th scope="row" class="th">Resumo</th>
+        <th scope="row" class="th">Editora</th>
+        <th scope="row" class="th">Autores</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let livro of livros" class="table-group-divider">
+      <tr>
+        <td scope="row" class="livro-titulo">{{livro.titulo}}</td>
+        <td scope="row" class="col-xx">{{livro.resumo}}</td>
+        <td scope="row">{{obterNome(livro.codEditora)}}</td>
+        <div class="mr-3">
+          <td scope="row">
+            <ul>
+              <li *ngFor="let autor of livro.autores">
+                {{autor}}
+              </li>
+            </ul>
+          </td>
+        </div>
         <td>
           <button class="btn btn-warning" (click)="excluir(livro.codigo)">Excluir</button>
         </td>

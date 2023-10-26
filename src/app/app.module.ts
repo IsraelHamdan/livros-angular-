@@ -5,10 +5,13 @@ import { AppComponent } from './app.component';
 import { LivroListaModule } from './components/livro-lista/livro-lista.module';
 import { ControleEditoraService } from './controle-editora.service';
 import { ControleLivrosService } from './controle-livros.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LivroListaModule],
+  declarations: [AppComponent, NavbarComponent, FooterComponent],
+  imports: [BrowserModule, AppRoutingModule, LivroListaModule, FormsModule],
   providers: [ControleEditoraService, ControleLivrosService],
   bootstrap: [AppComponent],
 })
