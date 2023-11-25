@@ -1,27 +1,6 @@
-# LivrosAngular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Livraia Angualar 
+Este projeto foi feito usando a versão 16.2.0 do Angular!
+Para rodar ele localmente é necessário ter o [Node.js](https://nodejs.org/en) instalado na maquina e também o [Angular CLI](https://angular.io/guide/setup-local)
+Dentro da pasta do projeto pelo terminal use o comando `npm install`
+![instalando-as-dependencias-do-projeto-angular ](https://github.com/IsraelHamdan/livros-angular-/assets/108038524/6afe3412-ce0a-4031-b02b-5b9eb3e514a8) 
+Dentro da pasta do projeto também no terminal use o comando `ng server` ou `ng s`
